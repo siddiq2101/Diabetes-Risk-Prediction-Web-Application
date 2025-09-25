@@ -10,7 +10,7 @@ A web application that predicts the risk of diabetes using machine learning. The
 | `model_training.py` | Python script to train the XGBoost model on the diabetes dataset. |
 | `diabetes.csv` | **Pima Indians Diabetes Dataset** used for training the model. |
 | `diabetes_xgb_model.joblib` | Trained XGBoost model saved using Joblib. |
-
+| `requirements.txt` | Lists all Python dependencies needed to run the app and training scripts. |
 ---
 
 ## Dataset
