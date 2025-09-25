@@ -46,3 +46,18 @@ Make sure you have Python 3.8+ installed. Install the required packages:
 
 ```bash
 pip install -r requirements.txt
+
+## Notes on Accuracy
+
+In medical prediction projects, achieving very high accuracy (e.g., above 90%) is often unrealistic and not the primary goal. This is because:
+
+1. **Class Imbalance**: Many medical datasets have fewer positive cases (e.g., patients with a disease) compared to negative cases (healthy patients). High overall accuracy can be misleading if the model mostly predicts the majority class correctly.
+
+2. **Patient Safety Priority**: The main goal in healthcare is to **avoid missing any patients who may have a serious condition**. This often requires lowering the prediction threshold to catch more positive cases, which can reduce overall accuracy but increases recall for the critical cases.
+
+3. **Biological Variability**: Human health is highly variable. Symptoms, test results, and risk factors can differ greatly between individuals, making perfect prediction impossible.
+
+4. **Measurement Errors**: Medical data may contain noise, errors, or missing values due to testing equipment, human recording, or patient reporting, which limits model accuracy.
+
+Hence, in medical ML projects, metrics like **recall, sensitivity, ROC-AUC, and precision-recall trade-offs** are often more important than raw accuracy.
+
