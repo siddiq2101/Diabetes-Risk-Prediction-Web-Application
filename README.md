@@ -46,10 +46,10 @@ Make sure you have Python 3.8+ installed. Install the required packages:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ## Notes on Accuracy
 
-In medical prediction projects, achieving very high accuracy (e.g., above 90%) is often unrealistic and not the primary goal. This is because:
+In medical prediction projects, achieving very high accuracy (e.g., above 80% or 90%) is often unrealistic and not the primary goal. This is because:
 
 1. **Class Imbalance**: Many medical datasets have fewer positive cases (e.g., patients with a disease) compared to negative cases (healthy patients). High overall accuracy can be misleading if the model mostly predicts the majority class correctly.
 
